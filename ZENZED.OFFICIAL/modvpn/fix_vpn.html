@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="file:///android_asset/web/css/style.css" rel="stylesheet">
+    <link href="file:///android_asset/web/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body style="background: #23262E">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 mt-3">
+            <div id="accordion" role="tablist">
+                <div class="card" style="background: #323641; color: #fff; border:0; border-radius: 3px; margin-bottom: 0.5rem">
+                    <a data-toggle="collapse" href="#NETWORK_RECV_ERROR" aria-expanded="true" aria-controls="NETWORK_RECV_ERROR" style="color: #fff">
+                        <div class="card-header headingOne" role="tab" id="headingOne" style="background: #323641; border-bottom: 2px solid #23262E">
+                            <h5 class="mb-0">
+                                <i class="fa fa-plus-square text-danger"></i> <small>NETWORK_RECV_ERROR</small>
+                            </h5>
+                        </div>
+                    </a>
+                    <div id="NETWORK_RECV_ERROR" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <b class="text-danger">Fixes (Choose 1):</b> <br />
+                            <b>a.</b> Check your internet connectivity, make sure data connection is not turn off or blocked from accessing internet <br />
+                            <b>b.</b> Check selected payload, make sure it is matched with your internet network <br />
+                            <b>c.</b> CDC data of your device / Toggle Airplane mode <br />
+                            <b>d.</b> Check if you are on the latest app & resources version <br />
+                            <b>e.</b> Clear application cache <br />
+                            <b>f.</b> Clear application data (Make sure you have internet connection for the fetching of initial app resources) <br />
+                            <b>g.</b> Update your server & payload resources <br />
+                            <b>h.</b> If you have sim freebies, consume it first using other payloads <br />
+                            <b>i.</b> Reboot your device
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background: #323641; color: #fff; border:0; border-radius: 3px; margin-bottom: 0.5rem">
+                    <a data-toggle="collapse" href="#NETWORK_EOF_ERROR" aria-expanded="false" aria-controls="NETWORK_EOF_ERROR" style="color: #fff">
+                        <div class="card-header" role="tab" id="headingTwo" style="background: #323641; border-bottom: 2px solid #23262E">
+                            <h5 class="mb-0">
+                                <i class="fa fa-plus-square text-danger"></i> <small>NETWORK_EOF_ERROR</small>
+                            </h5>
+                        </div>
+                    </a>
+                    <div id="NETWORK_EOF_ERROR" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <b class="text-danger">Fixes (Choose 1):</b> <br />
+                            <b>a.</b> It is possible that the selected server is already full<br />
+                            <b>b.</b> Double check if you are on the latest app & resources version <br />
+                            <b>c.</b> If errors still occurs, try NETWORK_RECV_ERROR fixes above<br />
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background: #323641; color: #fff; border:0; border-radius: 3px; margin-bottom: 0.5rem">
+                    <a data-toggle="collapse" href="#TUN_PROP_ERROR" aria-expanded="false" aria-controls="TUN_PROP_ERROR" style="color: #fff">
+                        <div class="card-header" role="tab" id="headingNine" style="background: #323641; border-bottom: 2px solid #23262E">
+                            <h5 class="mb-0">
+                                <i class="fa fa-plus-square text-danger"></i> <small>TUN_PROP_ERROR</small>
+                            </h5>
+                        </div>
+                    </a>
+                    <div id="TUN_PROP_ERROR" class="collapse" role="tabpanel" aria-labelledby="headingNine" data-parent="#accordion">
+                        <div class="card-body">
+                            <b class="text-danger">Fixes (Choose 1):</b> <br />
+                            <b>a.</b> All available IPV4 IPs are already being used please try different server<br />
+                            <b>b.</b> If errors still occurs, try NETWORK_RECV_ERROR or NETWORK_EOF_ERROR fixes above<br />
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background: #323641; color: #fff; border:0; border-radius: 3px; margin-bottom: 0.5rem">
+                    <a data-toggle="collapse" href="#http_error_code_302" aria-expanded="false" aria-controls="http_error_code_302" style="color: #fff">
+                        <div class="card-header" role="tab" id="headingThree" style="background: #323641; border-bottom: 2px solid #23262E">
+                            <h5 class="mb-0">
+                                <i class="fa fa-plus-square text-danger"></i> <small>HTTP PROXY STATUS CODE: 302</small>
+                            </h5>
+                        </div>
+                    </a>
+                    <div id="http_error_code_302" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <b class="text-danger">Fixes:</b> Check your internet connectivity, make sure data connection is not turn off or blocked from accessing internet
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background: #323641; color: #fff; border:0; border-radius: 3px; margin-bottom: 0.5rem">
+                    <a data-toggle="collapse" href="#http_proxy_unexpected_eof" aria-expanded="false" aria-controls="http_proxy_unexpected_eof" style="color: #fff">
+                        <div class="card-header" role="tab" id="headingTen" style="background: #323641; border-bottom: 2px solid #23262E">
+                            <h5 class="mb-0">
+                                <i class="fa fa-plus-square text-danger"></i> <small>HTTP PROXY UNEXPECTED EOF</small>
+                            </h5>
+                        </div>
+                    </a>
+                    <div id="http_proxy_unexpected_eof" class="collapse" role="tabpanel" aria-labelledby="headingTen" data-parent="#accordion">
+                        <div class="card-body">
+                            <b class="text-danger">Fixes (Choose 1):</b> <br />
+                            <b>a.</b> It is possible that the proxy of the server is dead/down, contact EUT VPN personnel to fix the issue.<br />
+                            <b>b.</b> You may try to use no proxy option on Experimental Settings or Use Direct Connection<br />
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background: #323641; color: #fff; border:0; border-radius: 3px; margin-bottom: 0.5rem">
+                    <a data-toggle="collapse" href="#http_error_code_501" aria-expanded="false" aria-controls="http_error_code_501" style="color: #fff">
+                        <div class="card-header" role="tab" id="headingFour" style="background: #323641; border-bottom: 2px solid #23262E">
+                            <h5 class="mb-0">
+                                <i class="fa fa-plus-square text-danger"></i> <small>HTTP PROXY STATUS CODE: 501</small>
+                            </h5>
+                        </div>
+                    </a>
+                    <div id="http_error_code_501" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            <b class="text-danger">Fixes:</b> Check selected payload, make sure it is matched with your internet network
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background: #323641; color: #fff; border:0; border-radius: 3px; margin-bottom: 0.5rem">
+                    <a data-toggle="collapse" href="#auth_failed" aria-expanded="false" aria-controls="auth_failed" style="color: #fff">
+                        <div class="card-header" role="tab" id="headingFive" style="background: #323641; border-bottom: 2px solid #23262E">
+                            <h5 class="mb-0">
+                                <i class="fa fa-plus-square text-danger"></i> <small>AUTHENTICATION FAILED</small>
+                            </h5>
+                        </div>
+                    </a>
+                    <div id="auth_failed" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body">
+                            <b class="text-danger">Fixes (Choose 1):</b> <br />
+                            <b>a.</b> It is possible that your app version is not on the latest version, update it on <a style="color: #51bb75" href="https://play.google.com/store/apps/details?id=xyz.eutvpn.app">Playstore</a> to fix the problem. For OTA, check carefully your credentials inputted on EUT VPN client.<br />
+                            <b>b.</b> Sometimes this error occurs during the server routine maintenance [00:00 / 6:00 / 12:00 / 18:00 (GMT +8)]<br />
+                            <b>c.</b> If you are using secret server double check your access expiration<br />
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background: #323641; color: #fff; border:0; border-radius: 3px; margin-bottom: 0.5rem">
+                    <a data-toggle="collapse" href="#waiting_server_error" aria-expanded="false" aria-controls="waiting_server_error" style="color: #fff">
+                        <div class="card-header" role="tab" id="headingSix" style="background: #323641; border-bottom: 2px solid #23262E">
+                            <h5 class="mb-0">
+                                <i class="fa fa-plus-square text-danger"></i> <small>CONNECTING / WAITING FOR PROXY OR SERVER ERROR</small>
+                            </h5>
+                        </div>
+                    </a>
+                    <div id="waiting_server_error" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion">
+                        <div class="card-body">
+                            <b class="text-danger">Fixes:</b> It is possible that the selected server is dead/down, sometimes reconnecting solved the issue. If problem still persist you can contact EUT VPN personnel to fix the issue.
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background: #323641; color: #fff; border:0; border-radius: 3px; margin-bottom: 0.5rem">
+                    <a data-toggle="collapse" href="#bad_private_key" aria-expanded="false" aria-controls="bad_private_key" style="color: #fff">
+                        <div class="card-header" role="tab" id="headingSeven" style="background: #323641; border-bottom: 2px solid #23262E">
+                            <h5 class="mb-0">
+                                <i class="fa fa-plus-square text-danger"></i> <small>BAD PRIVATE KEY</small>
+                            </h5>
+                        </div>
+                    </a>
+                    <div id="bad_private_key" class="collapse" role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordion">
+                        <div class="card-body">
+                            <b class="text-danger">Fixes:</b> Update your app to the latest version on <a style="color: #51bb75" href="https://play.google.com/store/apps/details?id=xyz.eutvpn.app">Playstore</a>. For OTA, check carefully your inputted private key from your account details.
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background: #323641; color: #fff; border:0; border-radius: 3px; margin-bottom: 0.5rem">
+                    <a data-toggle="collapse" href="#cert_verification_failed" aria-expanded="false" aria-controls="cert_verification_failed" style="color: #fff">
+                        <div class="card-header" role="tab" id="headingEight" style="background: #323641; border-bottom: 2px solid #23262E">
+                            <h5 class="mb-0">
+                                <i class="fa fa-plus-square text-danger"></i> <small>CERTIFICATE VERIFICATION FAILED</small>
+                            </h5>
+                        </div>
+                    </a>
+                    <div id="cert_verification_failed" class="collapse" role="tabpanel" aria-labelledby="headingEight" data-parent="#accordion">
+                        <div class="card-body">
+                            <b class="text-danger">Fixes:</b> Correct your device date & time
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="file:///android_asset/web/js/jquery.min.js"></script>
+<script src="file:///android_asset/web/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function() {
+    var url = document.location.toString();
+    if ( url.match('#') ) {
+        var hash = url.split('#')[1];
+
+        // collapse the expanded panel
+        $('#accordion .collapse').removeClass('show');
+
+        // expand the requested panel
+        $('#' + hash).addClass('show');
+    }
+});
+</script>
+</body>
+</html>
